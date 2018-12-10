@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage">
+
+    <StackLayout BackgroundColor="LightSkyBlue">
+        
+        <!-- Place new controls here -->
+        <Label Text="Score: "  BackgroundColor="AntiqueWhite" TextColor="DarkOliveGreen" FontFamily="Constantia" WidthRequest="100"/>
+        <Label Text="0" x:Name="Score"  BackgroundColor="AntiqueWhite"  TextColor="DarkOliveGreen"  FontFamily="Constantia" WidthRequest="75"/>
+        <Label Text="Awesome Word Search" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"  BackgroundColor="AntiqueWhite" TextColor="DarkOliveGreen"  FontFamily="Constantia" WidthRequest="200"/>
+        <Label x:Name="foundWord" Text="" BackgroundColor="AntiqueWhite" TextColor="DarkOliveGreen"  FontFamily="Constantia" WidthRequest="300"/>
+        <Grid       HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" BackgroundColor="AliceBlue" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+         
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="40" />
+   
+      
+            </Grid.ColumnDefinitions>
+            <!--row1-->
+
+            <Button Text="W" Clicked="Button_Clicked" Grid.Row="0" Grid.Column="0" BorderRadius="23" FontAttributes="Bold"   x:Name="Button0"/>
+            <Button Text="E" Clicked="Button_Clicked" Grid.Row="0" Grid.Column="1" BorderRadius="23" FontAttributes="Bold"   x:Name="Button1"/>
+            <Button Text="L" Clicked="Button_Clicked" Grid.Row="0" Grid.Column="2" BorderRadius="23" FontAttributes="Bold"      x:Name="Button2"/>
+            <Button Text="C" Clicked="Button_Clicked" Grid.Row="0" Grid.Column="3" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button3"/>
+            <Button Text="O" Clicked="Button_Clicked" Grid.Row="0" Grid.Column="4" BorderRadius="23" FontAttributes="Bold"      x:Name="Button4"/>
+            <Button Text="M" Clicked="Button_Clicked" Grid.Row="0" Grid.Column="5" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button5"/>
+            <Button Text="E" Clicked="Button_Clicked" Grid.Row="0" Grid.Column="6" BorderRadius="23" FontAttributes="Bold"      x:Name="Button6"/>
+           
+            
+                <!--row2-->
+            <Button Text="W" Clicked="Button_Clicked" Grid.Row="1" Grid.Column="0" BorderRadius="23" FontAttributes="Bold"      x:Name="Button7"/>
+            <Button Text="E" Clicked="Button_Clicked" Grid.Row="1" Grid.Column="1" BorderRadius="23" FontAttributes="Bold"      x:Name="Button8"/>
+            <Button Text="L" Clicked="Button_Clicked" Grid.Row="1" Grid.Column="2" BorderRadius="23" FontAttributes="Bold"      x:Name="Button9"/>
+            <Button Text="C" Clicked="Button_Clicked" Grid.Row="1" Grid.Column="3" BorderRadius="23" FontAttributes="Bold"      x:Name="Button10"/>
+            <Button Text="O" Clicked="Button_Clicked" Grid.Row="1" Grid.Column="4" BorderRadius="23" FontAttributes="Bold"      x:Name="Button11"/>
+            <Button Text="M" Clicked="Button_Clicked" Grid.Row="1" Grid.Column="5" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button12"/>
+            <Button Text="E" Clicked="Button_Clicked" Grid.Row="1" Grid.Column="6" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button13"/>
+           
+
+            <!--row3-->
+            <Button Text="W" Clicked="Button_Clicked" Grid.Row="2" Grid.Column="0" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button14"/>
+            <Button Text="E" Clicked="Button_Clicked" Grid.Row="2" Grid.Column="1" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button15"/>
+            <Button Text="L" Clicked="Button_Clicked" Grid.Row="2" Grid.Column="2" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button16"/>
+            <Button Text="C" Clicked="Button_Clicked" Grid.Row="2" Grid.Column="3" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button17"/>
+            <Button Text="O" Clicked="Button_Clicked" Grid.Row="2" Grid.Column="4" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button18"/>
+            <Button Text="M" Clicked="Button_Clicked" Grid.Row="2" Grid.Column="5" BorderRadius="23" FontAttributes="Bold"      x:Name="Button19"/>
+            <Button Text="E" Clicked="Button_Clicked" Grid.Row="2" Grid.Column="6" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button20"/>
+    
+
+            <!--row4-->
+            <Button Text="W" Clicked="Button_Clicked" Grid.Row="3" Grid.Column="0" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button21"/>
+            <Button Text="E" Clicked="Button_Clicked" Grid.Row="3" Grid.Column="1" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button22"/>
+            <Button Text="L" Clicked="Button_Clicked" Grid.Row="3" Grid.Column="2" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button23"/>
+            <Button Text="C" Clicked="Button_Clicked" Grid.Row="3" Grid.Column="3" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button24"/>
+            <Button Text="O" Clicked="Button_Clicked" Grid.Row="3" Grid.Column="4" BorderRadius="23"   FontAttributes="Bold"    x:Name="Button25"/>
+            <Button Text="M" Clicked="Button_Clicked" Grid.Row="3" Grid.Column="5" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button26"/>
+            <Button Text="E" Clicked="Button_Clicked" Grid.Row="3" Grid.Column="6" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button27"/>
+
+
+            <!--row5-->
+            <Button Text="W" Clicked="Button_Clicked" Grid.Row="4" Grid.Column="0" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button28"/>
+            <Button Text="E" Clicked="Button_Clicked" Grid.Row="4" Grid.Column="1" BorderRadius="23"   FontAttributes="Bold"    x:Name="Button29"/>
+            <Button Text="L" Clicked="Button_Clicked" Grid.Row="4" Grid.Column="2" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button30"/>
+            <Button Text="C" Clicked="Button_Clicked" Grid.Row="4" Grid.Column="3" BorderRadius="23"   FontAttributes="Bold"    x:Name="Button31"/>
+            <Button Text="O" Clicked="Button_Clicked" Grid.Row="4" Grid.Column="4" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button32"/>
+            <Button Text="M" Clicked="Button_Clicked" Grid.Row="4" Grid.Column="5" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button33"/>
+            <Button Text="E" Clicked="Button_Clicked" Grid.Row="4" Grid.Column="6" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button34"/>
+   
+
+            <!--row6-->
+            <Button Text="W" Clicked="Button_Clicked" Grid.Row="5" Grid.Column="0" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button35"/>
+            <Button Text="E" Clicked="Button_Clicked" Grid.Row="5" Grid.Column="1" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button36"/>
+            <Button Text="L" Clicked="Button_Clicked" Grid.Row="5" Grid.Column="2" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button37"/>
+            <Button Text="C" Clicked="Button_Clicked" Grid.Row="5" Grid.Column="3" BorderRadius="23"   FontAttributes="Bold"    x:Name="Button38"/>
+            <Button Text="O" Clicked="Button_Clicked" Grid.Row="5" Grid.Column="4" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button39"/>
+            <Button Text="M" Clicked="Button_Clicked" Grid.Row="5" Grid.Column="5" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button40"/>
+            <Button Text="E" Clicked="Button_Clicked" Grid.Row="5" Grid.Column="6" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button41"/>
+
+
+            <!--row7-->
+            <Button Text="W" Clicked="Button_Clicked" Grid.Row="6" Grid.Column="0" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button42"/>
+            <Button Text="E" Clicked="Button_Clicked" Grid.Row="6" Grid.Column="1" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button43"/>
+            <Button Text="L" Clicked="Button_Clicked" Grid.Row="6" Grid.Column="2" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button44"/>
+            <Button Text="C" Clicked="Button_Clicked" Grid.Row="6" Grid.Column="3" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button45"/>
+            <Button Text="O" Clicked="Button_Clicked" Grid.Row="6" Grid.Column="4" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button46"/>
+            <Button Text="M" Clicked="Button_Clicked" Grid.Row="6" Grid.Column="5" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button47"/>
+            <Button Text="E" Clicked="Button_Clicked" Grid.Row="6" Grid.Column="6" BorderRadius="23"  FontAttributes="Bold"     x:Name="Button48"/>
+        </Grid>
+
+
+        <Button Text="Start" Clicked="Button_Clicked_3" x:Name="StartButton"/>
+        <Button Text="Check" Clicked="Button_Clicked_1"/>
+        <Button Text="Quit" Clicked="Button_Clicked_2"/>
+    </StackLayout>
+
+</ContentPage>
